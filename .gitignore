@@ -1,0 +1,62 @@
+# 💻 Node.js Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 🚀 Environment Variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.example
+
+# 📦 Package Lock Files (Optional: Can be committed if needed)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# 🛠 Build Artifacts
+dist/
+build/
+.cache/
+
+# 🔄 Logs & Debugging Files
+logs/
+*.log
+debug.log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# 📂 Database (MongoDB or SQLite)
+dump.rdb
+*.sqlite
+*.sqlite3
+*.db
+
+# 🖼 Public & Uploads (if storing uploaded files locally)
+uploads/
+public/temp/
+public/uploads/
+
+# 🖥 OS-Specific Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 🔄 Git & Editor Config Files
+.git/
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# 🧪 Testing & Coverage Reports
+coverage/
+.nyc_output/
+jest/

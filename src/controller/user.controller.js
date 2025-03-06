@@ -130,7 +130,7 @@ const userLogout = asyncHandler(async(req, res)=>{
 const getCurrentUser = asyncHandler(async(req, res)=>{
     console.log(req);
     const user = req.user
-    console.log("getCurrentUser :");
+    console.log("getCurrentUser :",user);
     
     if(!user){
         throw new apiError(400,"cant get current user")

@@ -55,7 +55,7 @@ const getAllContent = asyncHandler(async(req,res)=>{
     console.log("addContent :",addContent);
     
 
-    if (!allContent.length === 0) {
+    if (!allContent.length) {
         throw new apiError(404, "No content found for this user");
     }
 

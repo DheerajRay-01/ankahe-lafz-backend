@@ -9,7 +9,8 @@ export const JWTverify = asyncHandler(async(req, _, next)=>{
       console.log("token:", token);
   
      if(!token){
-         throw new apiError(401,"verify JWT error, Unauthorized request")
+        console.log("No token found in cookies or headers");
+        throw new apiError(401, "Unauthorized request: No token provided");
      }
  
      const decodedToken = jwt.verify(token,process.env.ACCESS_TOKEN_SECRET)
